@@ -1,0 +1,369 @@
+@font-face{
+	src:url(fonts/TitilliumWeb-Regular.ttf);
+	font-family:TitilliumWeb;
+}
+
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family:TitilliumWeb;
+}
+
+
+ul, ol{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+.wrapper{
+	max-width: 1200px;
+	width: 85%;
+	margin: auto;
+}
+
+.nav{
+	padding: 20px 0px;
+}
+.nav-wrapper{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo{
+	flex: 0 0 22%;	
+}
+
+.nav_bar{
+	flex: 0 0 35%;
+}
+
+.nav_bar ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.nav_bar ul li{
+	flex: 1 0 25%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	display: block;
+}
+
+.nav_bar ul>li a{
+	color: #061414;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: normal;
+	text-transform: uppercase;
+	padding: 6px 0px;
+	display: block;
+	text-align: center;
+}
+
+.nav_bar .services{
+	font-weight: bold;
+}
+
+.nav_bar ul li a:hover{
+	font-weight: bold;
+}
+
+.button{
+	flex: 0 0 15%;
+	background-color: #fff;
+	border: 1px solid #ECECEC;
+	padding: 10px 0px;
+	text-align: center;
+	position: relative;
+	transition: .2s;
+}
+
+.button:hover{
+	background-color: #00B4AF;
+	border: 1px solid #00B4AF;
+	cursor: pointer;
+}
+
+.button a{
+	text-decoration: none;
+	text-align: right;
+	color: #061414;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.button:hover a{
+	color: #fff;
+}
+
+.button img{
+	margin-left: 3px;
+}
+
+.button img[src="img/secondery.png"]{
+	position: absolute;
+	top: 14px;
+	left: 72%;
+	right:0px;
+	bottom: 0px;
+	display: none;
+}
+
+.button:hover img[src="img/secondery.png"]{
+	display:inline-block;
+}
+
+.button:hover img{
+	display: none;
+}
+ /*consultancy section start */
+.consultancy{
+	background-color: #FFFFFF;
+	padding: 37px 0px 100px 0px;
+}
+
+.consultancy_wrapper{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	
+}
+
+.consultancy_content{
+	flex: 0 0 49%;
+}
+
+.consultancy_content h2{
+	color: #061414CC;
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.consultancy_content h3{
+	font-size: 40px;
+	font-weight: bold;
+	color: #061414CC;
+	line-height: 50px;
+	width: 90%;
+	margin-top: 20px;
+}
+.consultencty_photo{
+	flex: 0 0 49%;
+	text-align: right;
+}
+
+.consultancy_content p{
+	color: #061414CC;
+	font-size: 16px;
+	line-height: 30px;
+	width: 90%;
+	margin-top: 50px;
+}
+
+
+ /*consultancy section end */
+
+.consultancy_details{
+	background-color: #061414;
+	padding: 100px 0px;
+}
+
+.consultancy_discription{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.consultancy_heading{
+	flex: 0 0 48%;
+}
+
+.consultancy_heading h2{
+	color: #fff;
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 50px;
+	width: 100%;
+}
+.consultancy_text{
+	flex: 0 0 48%;
+}
+
+.consultancy_text p{
+	color: #FFFFFFCC;
+	line-height: 30px;
+	font-size: 16px;
+	font-weight: lighter;
+	width: 82%;
+	margin-left: auto;
+}
+
+.consultancy_text p span{
+	color: #fff;
+	font-weight: bold;
+}
+
+
+/* book-section start */
+
+.book_section{
+	margin-top: 97px;
+	margin-bottom: 97px;
+}
+
+.book-detail_section{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.book_content{
+	flex: 0 0 69%;
+}
+
+.book_content h3{
+	font-size: 16px;
+	font-weight: bold;
+	color: #061414CC;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.book_content p{
+	color: #061414CC;
+	margin-top: 20px;
+	font-size: 16px;
+	font-weight: lighter;
+	line-height: 30px;
+}
+
+.book_buttonn{
+	flex: 0 0 28%;
+	text-align: right;
+}
+
+.buttonn{
+	background-color: #31ADAA;
+	padding: 8px 20px;
+	display: inline-block;
+}
+
+.buttonn:hover{
+	background-color:#00B4AF;
+	cursor: pointer;
+}
+
+/* book-section end */
+
+/* footer-section start */
+
+.footer__main{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.footer__description{
+	flex: 0 0 48%;
+}
+
+.footer__description p{
+	color: #061414CC;
+	width: 80%;
+	margin-top: 20px;
+	font-size: 16px;
+	font-weight: lighter;
+	line-height: 30px;
+}
+
+.footer__icons{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.footer__icons ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+.footer__icons ul li{
+	flex: 0 0 8%;
+}
+.footer__icons ul li a{
+	font-size: 16px;
+	color: #000000;
+}
+
+ .footer__menu{
+	flex: 0 0 48%;
+}
+
+.menu-list{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.navigate-list-toggle h3{
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 30px;
+	color: #061414CC;
+}
+
+.nevigate-list ul{
+	margin-top: 30px;
+}
+
+.nevigate-list ul li{
+	margin: 5px 0px;
+}
+
+.nevigate-list ul li a{
+	color: #061414CC;
+	font-size: 16px;
+	font-weight: lighter;
+	line-height: 30px;
+}
+
+.footer__copyright{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 25px 0px 40px 0px;
+	border-top: 1px solid #ECECEC;
+}
+
+
+.footer__copyright-message p{
+	color: #061414CC;
+	font-size: 16px;
+	font-weight: lighter;
+}
+
+.footer__privacy p a{
+	color: #061414CC;
+	font-size: 16px;
+	font-weight: lighter;
+}
+
+
+/* footer-section end */
+
+
+/*
+https://bores.netlify.app/services/consultancy/
+*/
